@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1>Witamy na stronie głównej portfolio</h1>
+        <p>Oto kilka informacji o tym, co znajdziesz na naszej stronie.</p>
+        <ul>
+            <li><a href="{% url 'me' %}">Bio</a></li>
+            <li><a href="{% url 'contact' %}">Kontakt</a></li>
+        </ul>
+    </div>
+{% endblock %}
